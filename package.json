@@ -1,0 +1,35 @@
+{
+  "name": "@maroon1/wechat-signable-url",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "maroon1",
+  "main": "dist/index.js",
+  "module": "dist/wechat-signable-url.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "husky": "^3.1.0",
+    "tsdx": "^0.11.0",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.2"
+  }
+}
