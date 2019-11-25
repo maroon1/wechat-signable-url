@@ -17,6 +17,9 @@ npm install @maroon1/wechat-signable-url
 ```javascript
 import url from '@maroon1/wechat-signable-url';
 
+// 尽可能早的（在页面发生跳转之前）初始化入口地址，否则获取的待签名URL地址可能不正确
+url.init();
+
 const signableUrl = url();
 
 getSignatureFromRemote(signableUrl)
