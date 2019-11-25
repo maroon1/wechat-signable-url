@@ -22,11 +22,13 @@ export const getSignableUrl = (): string => {
  *
  * 在初始化之前去获取签名URL将会引起一个异常
  */
-getSignableUrl.init = () => {
+export const init = () => {
   if (!uninited) return;
 
   uninited = false;
   entry = window.location.href;
 };
+
+getSignableUrl.init = init;
 
 export default getSignableUrl;
