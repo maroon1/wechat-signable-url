@@ -6,6 +6,9 @@
   "main": "dist/index.js",
   "module": "dist/wechat-signable-url.esm.js",
   "typings": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "files": [
     "dist"
   ],
